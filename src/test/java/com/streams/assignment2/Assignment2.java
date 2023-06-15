@@ -28,6 +28,12 @@ public class Assignment2 {
         // 5 Find the first name that starts with an 'H'
         // 6 Print the names, sorted alphabetically
         // 7 Print all Base64 Encoded names using (see below) method getEncodedString
+        memberNames.stream()
+                .sorted()
+                .forEach(System.out::println);
+
+       // memberNames.sort();
+
 
 
 

@@ -27,18 +27,21 @@ public class Assignment9 {
         productsList.add(new Product(4,"Sony Laptop",28000f));
         productsList.add(new Product(5,"Apple Laptop",90000f));
 
+
+        productsList.stream()
+                .filter( (p) -> p.price > 30000)
+                .map( (x) -> x.price)
+//                .filter( (p) -> p > 30000)
+                .forEach(System.out::println);
+
         // 1 Print prices for all products
         // 2 Filter products with price > 30000 and print them
         // 3 Filter products with price > 30000,
-        // map them to their price and collect the new stream in a List
-        // and print the list
-        // count the number of products with price > 28000
+        //   map them to their price and collect the new stream in a List
+        //   and print the list
+        // 4 count the number of products with price > 28000
 
-        List<Float> productPriceList2 = productsList.stream()
-                .filter(p -> p.price > 30000)// filtering data
-                .map(p->p.price)        // fetching price
-                .collect(Collectors.toList()); // collecting as list
-        System.out.println(productPriceList2);
+
 
     }
 }

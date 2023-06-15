@@ -1,5 +1,7 @@
 package com.streams.assignment1;
 
+import java.util.Comparator;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 public class Assignment1 {
@@ -16,6 +18,11 @@ public class Assignment1 {
         // 6 Use the map method to transform the stream to a stream of Strings and print them
         // 7 print the maximum number in the stream
 
+        Comparator c;
+        Optional<Integer> max = stream.max( (x, y) -> x < y ? -1: 1);
+        max.isEmpty();
+        System.out.println("Max: " + max.get());
+        int maxInt = stream.max( Integer::compare).orElse(-1);
 
     }
 }
