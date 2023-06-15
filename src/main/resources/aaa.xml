@@ -1,0 +1,40 @@
+<Toepassing>
+    <Nummer>1</Nummer>
+    <Omschrijving>NRD: AanvraagNr, RijbewijsNr en BSN</Omschrijving>
+    <FilenetSettings>
+        <!--FilenetConnectionURI>-</FilenetConnectionURI>
+        <FilenetUsername>p8admin</FilenetUsername>
+        <FilenetPassword>06021D27202235233B337865</FilenetPassword-->
+        <FullPathNameBatches>RDW:/test_cor</FullPathNameBatches>
+        <DocClass>Test_NRD</DocClass>
+    </FilenetSettings>
+    <VariabeleIndices>
+        <VariabeleIndex>
+            <Naam>AanvraagId</Naam>
+            <Omschrijving>Aanvraagnummer</Omschrijving>
+        </VariabeleIndex>
+        <VariabeleIndex>
+            <Naam>AanvraagIdd</Naam>
+            <Omschrijving>Aanvraagnummerd</Omschrijving>
+        </VariabeleIndex>
+        <VariabeleIndex>
+            <Naam>RijbewijsNr</Naam>
+            <Omschrijving>Rijbewijsnummer</Omschrijving>
+        </VariabeleIndex>
+        <VariabeleIndex>
+            <Naam>BurgerserviceNr</Naam>
+            <Omschrijving>Burgerservicenummer</Omschrijving>
+        </VariabeleIndex>
+    </VariabeleIndices>
+    <ScannerSettings>
+        <Resolutie>300</Resolutie>
+        <Kwaliteit>93</Kwaliteit>
+    </ScannerSettings>
+</Toepassing>
+
+
+
+
+
+
+
