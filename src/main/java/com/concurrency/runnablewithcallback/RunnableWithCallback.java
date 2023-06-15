@@ -3,7 +3,7 @@ package com.concurrency.runnablewithcallback;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import workshop.concurrency.util.Util;
+import com.concurrency.util.Util;
 
 // Do the same as in 'Application.java'
 public class RunnableWithCallback {
@@ -20,7 +20,7 @@ public class RunnableWithCallback {
         System.out.println( "Orderly shutdown requested");
 
         while( !service.isTerminated()){
-            Util.wait(100);
+            Util.sleep(100);
         }
 
     }

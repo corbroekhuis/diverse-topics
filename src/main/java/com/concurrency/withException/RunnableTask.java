@@ -1,6 +1,6 @@
 package com.concurrency.withException;
 
-import workshop.concurrency.util.Util;
+import com.concurrency.util.Util;
 
 public class RunnableTask implements Runnable{
 
@@ -15,7 +15,7 @@ public class RunnableTask implements Runnable{
     @Override
     public void run() {
 
-    	Util.wait(runningTime);
+    	Util.sleep(runningTime);
         System.out.println( "Task: " + taskName + " is throwing Exception");
         String[] array = {"Ohoh..."};
         System.out.println( array[3]);

@@ -1,8 +1,8 @@
 package com.concurrency.withException;
 
-import java.util.concurrent.Callable;
+import com.concurrency.util.Util;
 
-import workshop.concurrency.util.Util;
+import java.util.concurrent.Callable;
 
 public class CallableTask implements Callable<String>{
 
@@ -16,8 +16,8 @@ public class CallableTask implements Callable<String>{
 
     @Override
     public String call() {
-    	
-    	Util.wait(runningTime);
+
+        Util.sleep(runningTime);
         System.out.println( "Task: " + taskName + " is throwing Exception");
         String[] array = {"Ohoh..."};
         System.out.println( array[3]);

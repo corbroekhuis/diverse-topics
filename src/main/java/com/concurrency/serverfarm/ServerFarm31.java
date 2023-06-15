@@ -1,9 +1,9 @@
 package com.concurrency.serverfarm;
 
+import com.concurrency.util.Util;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
-import workshop.concurrency.util.Util;
 
 public class ServerFarm31 {
 
@@ -36,7 +36,7 @@ public class ServerFarm31 {
                 // You can wait to finish or kill to stop
 
                 System.out.println("Sleeping 1 second");
-                Util.wait(1000);
+                Util.sleep(1000);
 
             }
 
