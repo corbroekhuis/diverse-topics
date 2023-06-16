@@ -22,19 +22,9 @@ public class ThreadPoolApplication {
             callables.add(() -> emailSendService.sendEmail(Util.getFakeEmail()));
         }
 
-        try {
-            List<Future<String>> futures = executor.invokeAll( callables);
+        // Use executor.invokeAll to execute all callables
+        // inspect all futures until all are finished
 
-            for( Future<String> future: futures){
-                String res = future.get();
-                System.out.println(res);
-            }
-
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
-            e.printStackTrace();
-        }
 
         executor.shutdown();
 

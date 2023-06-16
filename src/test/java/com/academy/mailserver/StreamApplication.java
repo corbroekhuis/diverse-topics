@@ -23,9 +23,7 @@ public class StreamApplication {
         long start = System.currentTimeMillis();
 
         // Send email to the backend using a Stream of Emails
-        emails.stream()
-                .peek( x -> System.out.println( x.getRecipients()))
-                .forEach( x -> emailSendService.sendEmail(x));
+
 
         System.out.println( "Processing stream took: " + ( System.currentTimeMillis() - start) + " millisecs");
 
